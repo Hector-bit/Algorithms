@@ -9,7 +9,6 @@ def recipe_batches(recipe, ingredients):
     return 0
   for i in recipe:
     smallest_batch.append(math.floor(ingredients[i] / recipe[i]))
-    print(smallest_batch)
   for i in smallest_batch:
     if smallest > i:
       smallest = i
